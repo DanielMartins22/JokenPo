@@ -39,7 +39,7 @@ git clone https://github.com/DanielMartins22/jokenpo.git
 
 2. Abra o arquivo `index.html` no navegador
 
-Ou acesse a versão online: [GitHub Pages](https://DanielMartins22.github.io/jokenpo)
+Ou acesse a versão online: [GitHub Pages](https://DanielMartins22.github.io/JokenPo)
 
 ## 👨‍💻 Autor
 
