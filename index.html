@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JokenPô</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Jokenpô</h1>
+            <p>Pedra, Papel, Tesoura</p>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score">
+                <h2><span class="player-icon">👤</span> Você</h2>
+                <p class="score-value" id="player-score">0</p>
+            </div>
+            <div class="score">
+                <h2><span class="draw-icon">🤝</span> Empates</h2>
+                <p class="score-value" id="draw-score">0</p>
+            </div>
+            <div class="score">
+                <h2><span class="computer-icon">🤖</span> Computador</h2>
+                <p class="score-value" id="computer-score">0</p>
+            </div>
+        </section>
+
+        <section class="game-area">
+            <div class="choices">
+                <h2>Escolha sua jogada:</h2>
+                <div class="buttons">
+                    <button id="rock" class="choice-icon">👊</button>
+                    <button id="paper" class="choice-icon">🖐️</button>
+                    <button id="scissors" class="choice-icon">✌️</button>
+                </div>
+            </div>
+
+            <div class="result">
+                <h2>Resultado:</h2>
+                <div class="match">
+                    <div class="player-choice">
+                        <div class="player-avatar">👤</div>
+                        <p>Você</p>
+                        <span class="choice-display" id="player-choice">?</span>
+                    </div>
+                    <div class="vs">
+                        <p>VS</p>
+                    </div>
+                    <div class="computer-choice">
+                        <div class="computer-avatar">🤖</div>
+                        <p>Computador</p>
+                        <span class="choice-display" id="computer-choice">?</span>
+                    </div>
+                </div>
+                <p class="result-message" id="result-message">Faça sua escolha para começar !</p>
+            </div>
+        </section>
+
+        <footer>
+            <button id="reset" class="reset-btn">Reiniciar Jogo</button>
+        </footer>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
