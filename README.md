@@ -34,7 +34,7 @@ Jogo clássico de Pedra, Papel e Tesoura desenvolvido com HTML, CSS e JavaScript
 
 1. Clone este repositório
 ```bash
-git clone https://github.com/SEU-USERNAME/jokenpo.git
+git clone https://github.com/DanielMartins22/jokenpo.git
 ```
 
 2. Abra o arquivo `index.html` no navegador
