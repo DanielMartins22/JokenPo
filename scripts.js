@@ -81,7 +81,7 @@ function updateScoreboard() {
 }
 
 
-function showResult(result) {
+function showMessageResult(result) {
     switch(result) {
 
         case 'Empate':
@@ -123,7 +123,7 @@ function playGame (playerChoice) {
 
     updateScoreboard()
 
-    showResult(checkWinner)
+    showMessageResult(checkWinner)
 
 }
 
