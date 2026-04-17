@@ -1,72 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Inicia elemento raiz com idioma definido como português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>JokenPô</title>
+<head> <!-- Abre seção de metadados e links do documento -->
+    <meta charset="UTF-8"> <!-- Define codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para telas de dispositivos móveis -->
+    <link rel="stylesheet" href="./styles.css"> <!-- Importa o arquivo de estilos CSS -->
+    <title>JokenPô</title> <!-- Define o título da aba do navegador -->
 
-</head>
+</head> <!-- Fecha a seção de metadados -->
 
-<body>
-    <div class="container">
-        <header>
-            <h1>Jokenpô</h1>
-            <p>Pedra, Papel, Tesoura</p>
-        </header>
+<body> <!-- Abre o corpo da página onde o conteúdo visível é exibido -->
+    <div class="container"> <!-- Container principal que centraliza o jogo -->
+        <header> <!-- Cabeçalho interno com título e subtítulo -->
+            <h1>Jokenpô</h1> <!-- Título principal do jogo -->
+            <p>Pedra, Papel, Tesoura</p> <!-- Descrição do jogo -->
+        </header> <!-- Fecha cabeçalho interno -->
 
-        <section class="scoreboard">
-            <div class="score">
-                <h2><span class="player-icon">👤</span> Você</h2>
-                <p class="score-value" id="player-score">0</p>
-            </div>
-            <div class="score">
-                <h2><span class="draw-icon">🤝</span> Empates</h2>
-                <p class="score-value" id="draw-score">0</p>
-            </div>
-            <div class="score">
-                <h2><span class="computer-icon">🤖</span> Computador</h2>
-                <p class="score-value" id="computer-score">0</p>
-            </div>
-        </section>
+        <section class="scoreboard"> <!-- Seção que exibe o placar do jogo -->
+            <div class="score"> <!-- Bloco de placar do jogador -->
+                <h2><span class="player-icon">👤</span> Você</h2> <!-- Nome do placar do jogador com ícone -->
+                <p class="score-value" id="player-score">0</p> <!-- Valor inicial da pontuação do jogador -->
+            </div> <!-- Fecha bloco de placar do jogador -->
+            <div class="score"> <!-- Bloco de placar de empates -->
+                <h2><span class="draw-icon">🤝</span> Empates</h2> <!-- Nome do placar de empates com ícone -->
+                <p class="score-value" id="draw-score">0</p> <!-- Valor inicial da pontuação de empates -->
+            </div> <!-- Fecha bloco de placar de empates -->
+            <div class="score"> <!-- Bloco de placar do computador -->
+                <h2><span class="computer-icon">🤖</span> Computador</h2> <!-- Nome do placar do computador com ícone -->
+                <p class="score-value" id="computer-score">0</p> <!-- Valor inicial da pontuação do computador -->
+            </div> <!-- Fecha bloco de placar do computador -->
+        </section> <!-- Fecha seção de placar -->
 
-        <section class="game-area">
-            <div class="choices">
-                <h2>Escolha sua jogada:</h2>
-                <div class="buttons">
-                    <button id="rock" class="choice-icon">👊</button>
-                    <button id="paper" class="choice-icon">🖐️</button>
-                    <button id="scissors" class="choice-icon">✌️</button>
-                </div>
-            </div>
+        <section class="game-area"> <!-- Seção principal de jogo que contém escolhas e resultado -->
+            <div class="choices"> <!-- Área de seleção de jogada -->
+                <h2>Escolha sua jogada:</h2> <!-- Instrução para o jogador selecionar uma opção -->
+                <div class="buttons"> <!-- Agrupa os botões de escolha -->
+                    <button id="rock" class="choice-icon">👊</button> <!-- Botão para escolher Pedra -->
+                    <button id="paper" class="choice-icon">🖐️</button> <!-- Botão para escolher Papel -->
+                    <button id="scissors" class="choice-icon">✌️</button> <!-- Botão para escolher Tesoura -->
+                </div> <!-- Fecha contêiner de botões -->
+            </div> <!-- Fecha área de escolhas -->
 
-            <div class="result">
-                <h2>Resultado:</h2>
-                <div class="match">
-                    <div class="player-choice">
-                        <div class="player-avatar">👤</div>
-                        <p>Você</p>
-                        <span class="choice-display" id="player-choice">?</span>
-                    </div>
-                    <div class="vs">
-                        <p>VS</p>
-                    </div>
-                    <div class="computer-choice">
-                        <div class="computer-avatar">🤖</div>
-                        <p>Computador</p>
-                        <span class="choice-display" id="computer-choice">?</span>
-                    </div>
-                </div>
-                <p class="result-message" id="result-message">Faça sua escolha para começar !</p>
-            </div>
-        </section>
+            <div class="result"> <!-- Área que exibe o resultado da rodada -->
+                <h2>Resultado:</h2> <!-- Título da área de resultado -->
+                <div class="match"> <!-- Contêiner que mostra o confronto entre jogador e computador -->
+                    <div class="player-choice"> <!-- Bloco da escolha do jogador -->
+                        <div class="player-avatar">👤</div> <!-- Avatar do jogador -->
+                        <p>Você</p> <!-- Rótulo do jogador -->
+                        <span class="choice-display" id="player-choice">?</span> <!-- Exibe a escolha do jogador -->
+                    </div> <!-- Fecha bloco da escolha do jogador -->
+                    <div class="vs"> <!-- Separador visual entre as escolhas -->
+                        <p>VS</p> <!-- Texto de confronto -->
+                    </div> <!-- Fecha bloco VS -->
+                    <div class="computer-choice"> <!-- Bloco da escolha do computador -->
+                        <div class="computer-avatar">🤖</div> <!-- Avatar do computador -->
+                        <p>Computador</p> <!-- Rótulo do computador -->
+                        <span class="choice-display" id="computer-choice">?</span> <!-- Exibe a escolha do computador -->
+                    </div> <!-- Fecha bloco da escolha do computador -->
+                </div> <!-- Fecha contêiner de confronto -->
+                <p class="result-message" id="result-message">Faça sua escolha para começar !</p> <!-- Mensagem inicial de instrução -->
+            </div> <!-- Fecha área de resultado -->
+        </section> <!-- Fecha seção principal de jogo -->
 
-        <footer>
-            <button id="reset" class="reset-btn">Reiniciar Jogo</button>
-        </footer>
-    </div>
-</body>
-<script src="./scripts.js"></script>
+        <footer> <!-- Rodapé com botão de reinício -->
+            <button id="reset" class="reset-btn">Reiniciar Jogo</button> <!-- Botão para resetar o placar e resultado -->
+        </footer> <!-- Fecha rodapé -->
+    </div> <!-- Fecha container principal -->
+</body> <!-- Fecha corpo do documento -->
+<script src="./scripts.js"></script> <!-- Importa o arquivo JavaScript do jogo -->
 
-</html>
+</html> <!-- Fecha elemento HTML raiz -->
